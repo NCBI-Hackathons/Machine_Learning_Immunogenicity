@@ -54,7 +54,10 @@ class OneHotEncoded:
             self.bits[(start*20):(stop*20)],
             self.ambig[start:stop]
         )
-                
+    
+    def to_bit_vector(self):
+        return self.bits.to01()
+            
     def to_aa(self):
         """Returns the sequence as a list of DNA base characters."""
         return self.bits.decode(BASE_ENCODING)
@@ -65,7 +68,7 @@ class OneHotEncoded:
         four-bit encoding of the AA at i, and the second element is the character
         corresponding to that base.
         """
-        binstr = self.bits.to01()
+        binstr = self.to_bit_vector()
         basestr = self.to_acgt()
         return ((binstr[(i*20):((i+1)*20)], basestr[i])
             for i in range(len(self)))
