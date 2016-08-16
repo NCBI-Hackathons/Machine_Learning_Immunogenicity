@@ -1,0 +1,4 @@
+data/bcell.txt.gz filter=lfs diff=lfs merge=lfs -text
+data/tcell.txt.gz filter=lfs diff=lfs merge=lfs -text
+data/bcell.RData filter=lfs diff=lfs merge=lfs -text
+data/tcell.RData filter=lfs diff=lfs merge=lfs -text
