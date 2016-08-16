@@ -26,3 +26,26 @@ peptides2input <- function(peptides) {
         paste(sapply(x, function(y) AA_ENCODING[y]), collapse=',')
     }))
 }
+recode <- function(celltype, N) {
+    tab<-readLines(gzfile(paste0(celltype, '.txt.gz')))
+    tab<-strsplit(tab,"\t")
+    tab<-lapply(tab, "[", 1:N)
+    tab<-do.call(rbind, tab)
+    colnames(tab) <- tab[1,]
+    tab <- tab[-1,]
+    tab <- as.data.frame(tab)
+    tab$bin <- ifelse(tab$`Qualitative Measure` == 'Negative', 0, 1)
+    tcell<-tab
+    save(tcell, file=paste0(celltype, '.RData'))
+    peptides <- tapply(tcell$bin, tcell$Description, function(x) c(sum(x==1), length(x)))
+    pep1<-do.call(rbind, peptides)
+    y<-as.numeric(pep1[,1])/as.numeric(pep1[,2])
+    names(y) <- rownames(pep1)
+    y<-y[y==0 | y == 1]
+    w<-nchar(names(y)) <= 20
+    y<-y[w]
+    pep2<-peptides2input(names(y))
+    pep3<-paste(pep2, ifelse(y==0,0,1), sep=',')
+    writeLines(pep3, paste0(celltype, '_training_data_nodups.txt'))
+    list(tab=tab,peptides=peptides,pep1=pep1,pep2=pep2,pep3=pep3)
+}
