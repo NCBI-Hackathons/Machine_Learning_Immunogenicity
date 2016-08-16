@@ -36,7 +36,7 @@ recode <- function(celltype, N) {
     tab <- as.data.frame(tab)
     tab$bin <- ifelse(tab$`Qualitative Measure` == 'Negative', 0, 1)
     tcell<-tab
-    save(tcell, file=paste0(celltype, '.RData'))
+    save(tcell, file=paste0(celltype, '2.RData'))
     peptides <- tapply(tcell$bin, tcell$Description, function(x) c(sum(x==1), length(x)))
     pep1<-do.call(rbind, peptides)
     y<-as.numeric(pep1[,1])/as.numeric(pep1[,2])
@@ -49,3 +49,5 @@ recode <- function(celltype, N) {
     writeLines(pep3, paste0(celltype, '_training_data_nodups.txt'))
     list(tab=tab,peptides=peptides,pep1=pep1,pep2=pep2,pep3=pep3)
 }
+tcell.recode <- recode('tcell',27)
+bcell.recode <- recode('bcell',29)
