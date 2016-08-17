@@ -47,23 +47,23 @@ Set one of the predictors with --predictor:
 
 Details from https://bioinformatics.oxfordjournals.org/content/suppl/2016/02/26/btw113.DC1/S1.pdf
 
-| SYFPEITHI | T-cell epitope | (Rammensee, et al., 1999)|
-| BIMAS | MHC-I binding | (Parker, et al., 1994)|
-| SVMHC | MHC-I binding | (Dönnes and Elofsson, 2002)|
-| ARB | MHC-I binding | (Bui, et al., 2005)|
-| SMM | MHC-I binding | (Peters and Sette, 2005)|
-| SMMPMBEC | MHC-I binding | (Kim, et al., 2009)|
-| Epidemix | MHC-I binding | (Feldhahn, et al., 2009)|
-| Comblib | MHC-I binding | (Sidney, et al., 2008)|
-| PickPocket* | MHC-I binding | (Zhang, et al., 2009)|
-| NetMHC* | MHC-I binding | (Lundegaard, et al., 2008)|
-| NetMHCpan* | MHC-I binding | (Hoof, et al., 2009)|
-| HAMMER | MHC-II binding | (Sturniolo, et al., 1999)|
-| TEPITOPEpan | MHC-II binding | (Zhang, et al., 2012)|
-| NetMHCII* | MHC-II binding | (Nielsen, et al., 2007)|
-| NetMHCIIpan* | MHC-II binding | (Karosiene, et al., 2013)|
-| UniTope | T-cell epitope | (Toussaint, et al., 2011)|
-| NetCTLpan* | T-cell epitope | (Stranzl, et al., 2010)|
+| SYFPEITHI | T-cell epitope | (Rammensee, et al., 1999) |
+| BIMAS | MHC-I binding | (Parker, et al., 1994) |
+| SVMHC | MHC-I binding | (Dönnes and Elofsson, 2002) |
+| ARB | MHC-I binding | (Bui, et al., 2005) |
+| SMM | MHC-I binding | (Peters and Sette, 2005) |
+| SMMPMBEC | MHC-I binding | (Kim, et al., 2009) |
+| Epidemix | MHC-I binding | (Feldhahn, et al., 2009) |
+| Comblib | MHC-I binding | (Sidney, et al., 2008) |
+| PickPocket* | MHC-I binding | (Zhang, et al., 2009) |
+| NetMHC* | MHC-I binding | (Lundegaard, et al., 2008) |
+| NetMHCpan* | MHC-I binding | (Hoof, et al., 2009) |
+| HAMMER | MHC-II binding | (Sturniolo, et al., 1999) |
+| TEPITOPEpan | MHC-II binding | (Zhang, et al., 2012) |
+| NetMHCII* | MHC-II binding | (Nielsen, et al., 2007) |
+| NetMHCIIpan* | MHC-II binding | (Karosiene, et al., 2013) |
+| UniTope | T-cell epitope | (Toussaint, et al., 2011) |
+| NetCTLpan* | T-cell epitope | (Stranzl, et al., 2010) |
 
 available datasets: iedb.tcell, ideb.mhc, imma2
 
