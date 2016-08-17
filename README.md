@@ -6,4 +6,4 @@ This project looks into the application of Machine Learning (ML) techniques in t
 
 Tensorflow is an open source software library ML that provides linear regression and classification algorithms (open sourced by Google in Nov 2015) for multi-dimensional arrays (aka “Tensors”). K-fold validation and hold-out test data was used to test the generated models.
 
-Initial application of Logistic Regression (LR) looks promising with approximately 82% accuracy. Various other ML algorithms such as Neural Networks (NN) and its variant Convoluted NN, RESNET, MUST-CNN as well as Random Forest, Bayesian Networks will be evaluated during the course of the effort.
+Initial application of Logistic Regression (LR) and Neural Networks (NN) looks promising with approximately 82% and 90% predictive accuracy respectively. Various other ML algorithms such as variants of Neural Networks such as Convoluted NN, RESNET, MUST-CNN as well as Random Forest, Bayesian Networks should be considered as part of future work. R scripts for data wrangling of IEDB data and mashup with Amino Acid properties have been provided.
