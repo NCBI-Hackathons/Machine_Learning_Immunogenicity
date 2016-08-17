@@ -6,3 +6,4 @@ data/bcell_training_data.txt.gz filter=lfs diff=lfs merge=lfs -text
 data/tcell_training_data.txt.gz filter=lfs diff=lfs merge=lfs -text
 data/tcell_training_data_nodups.txt.gz filter=lfs diff=lfs merge=lfs -text
 data/bcell_training_data_nodups.txt.gz filter=lfs diff=lfs merge=lfs -text
+data/tcell_peptide_allele_nodups.txt.gz filter=lfs diff=lfs merge=lfs -text
