@@ -38,7 +38,7 @@ This script allows to run published epitope binding predictors on immunogenicity
       --dataset DATASET     Immunogenic dataset [see all with --dataset=list]
 
 
-## List available predictors and datasets
+### List available predictors and datasets
 
     run-data-on-predictor.py  --predictor list --dataset list
 
@@ -67,7 +67,7 @@ Details from https://bioinformatics.oxfordjournals.org/content/suppl/2016/02/26/
 
 available datasets: iedb.tcell, ideb.mhc, imma2
 
-## Example output
+### Example output
 
     python -W ignore src/run-data-on-predictor.py --predictor all --dataset iedb.mhc -n 10
     
