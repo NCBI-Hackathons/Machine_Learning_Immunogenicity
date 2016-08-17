@@ -47,6 +47,8 @@ Set one of the predictors with --predictor:
 
 Details from https://bioinformatics.oxfordjournals.org/content/suppl/2016/02/26/btw113.DC1/S1.pdf
 
+| Method | Type | Publication |
+|--------|------|-------------|
 | SYFPEITHI | T-cell epitope | (Rammensee, et al., 1999) |
 | BIMAS | MHC-I binding | (Parker, et al., 1994) |
 | SVMHC | MHC-I binding | (Dönnes and Elofsson, 2002) |
