@@ -152,7 +152,7 @@ bcell$Epitope.Description.calcValue <- sapply(1:nrow(bcell), function(x) peptide
 calcValue <- data.frame(t(sapply(1:nrow(bcell), function(x) populatePeptide.aacomp(bcell[x,]$Epitope.Description))))
 c1 <- sapply(1:ncol(calcValue), function(x) unlist(calcValue[,x]))
 colnames(c1) <- colnames(calcValue)
-tcell <- data.frame(cbind(bcell,c1))
+bcell <- data.frame(cbind(bcell,c1))
 rm(c1)
 
 
