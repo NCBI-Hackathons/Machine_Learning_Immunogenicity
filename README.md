@@ -16,6 +16,34 @@ The following are provided:
 As part of initial results, the convergence of predictive accuracy for Neural Network is presented below.
 ![alt tag](https://github.com/NCBI-Hackathons/Machine_Learning_Immunogenicity/blob/master/pics/PredictiveAccuracy_NN_InitialFindings.PNG)
 
+## Amino acid properties computed using R peptides package and added to the new dataset
+* Tiny.Molecular.Percent
+* Small.Molecular.Percent
+* Aliphatic.Molecular.Percent
+* Aromatic.Molecular.Percent
+* Polar.Molecular.Percent
+* Charged.Molecular.Percent
+* Basic.Molecular.Percent
+* Acidic.Molecular.Percent
+* Peptide.Aliphatic.Index
+* Peptide.Boman
+* Peptide.Charge
+* Peptide.hmoment
+* Peptide.hydrophobicity
+* Peptide.instaindex
+* Peptide.Kidera.helix.bend.pref
+* Peptide.Kidera.side.chain.size
+* Peptide.Kidera.extended.str.pref
+* Peptide.Kidera.hydrophobicity
+* Peptide.Kidera.double.bend.pref
+* Peptide.Kidera.partial.spec.vol
+* Peptide.Kidera.flat.ext.pref
+* Peptide.Kidera.occurrence.alpha.reg
+* Peptide.Kidera.pK.C
+* Peptide.Kidera.surrounding.hydrop
+* Peptide.mw
+* Peptide.pI
+
 ## Test if epitope predictors predict immunogenicity on published data
 
 This script allows to run published epitope binding predictors on immunogenicity data from IEDB T-cell and MHC assays (http://www.iedb.org/), as well as data from IMMA2. This script can be used to test whether binding predictions also predict immugenicity (Note: they don't). We use the data interface implemented in the pepdata package from the Hammer Lab (https://github.com/hammerlab/pepdata) and the implementations of various predictors in the Fred 2 framework for computational immunogenomics by Schubert et al. (https://github.com/FRED-2/Fred2 and http://bioinformatics.oxfordjournals.org/content/32/13/2044).
